@@ -18,11 +18,15 @@ addButton?.addEventListener('click', ()=> {
         headers: {
             "Content-Type": "application/json",
         }
-    }).catch((error) => {
+    })
+    .then(response => {
+    if (response.ok) {
+        alert("Product Added Successfully!");
+        location.reload();
+    }
+}).catch((error) => {
         console.log(error)
     })
-    alert("Product Added Successfully!");
-    location.reload();
 })
 
 
