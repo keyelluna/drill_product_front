@@ -57,7 +57,7 @@ function getProducts(){
             html += `
                 <tr>
                     <td>${element.itemName}</td>
-                    <td>$${element.unitPrice}</td>
+                    <td>₱${element.unitPrice}</td>
                     <td>${element.quantity}</td>
                     <td>${element.supplier}</td>
                 </tr>
@@ -70,5 +70,6 @@ function getProducts(){
         console.log(error)
     })
 }
+
 
 
